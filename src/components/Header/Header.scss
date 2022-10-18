@@ -1,0 +1,33 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles//partials/mixins' as *;
+
+.header {
+  @include max-Screen {
+    display: flex;
+    background-color: $bodyColor;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+    width: 100%; 
+    padding: 0.75rem;
+    box-sizing: border-box;
+  }
+}
+
+#nav-button {
+  @include max-Screen {
+    width: 6.25rem;
+    height: 5rem;
+    border: none;
+    padding: 0;
+    margin: 1rem;
+  }
+}
+
+#nav-image {
+  @include max-Screen {
+    width: 100%;
+    height: 100%;
+    background-color: $bodyColor;
+  }
+}
