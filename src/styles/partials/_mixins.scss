@@ -1,19 +1,19 @@
-@use './variables';
+@use './variables' as *;
 
-@mixin smallScreen {
-  @media screen and (max-width: $breakpoint320mobile) {
+@mixin small-Screen {
+  @media screen and (min-width: $breakpoint320mobile) {
     @content;
   }
 }
 
-@mixin midScreen {
-  @media screen and (max-width: $breakpoint641tablet) {
+@mixin mid-Screen {
+  @media screen and (min-width: $breakpoint641tablet) {
     @content;
   }
 }
 
-@mixin midScreen {
-  @media screen and (max-width: $breakpoint1008desktop) {
+@mixin max-Screen {
+  @media screen and (min-width: $breakpoint1008desktop) {
     @content;
   }
 }

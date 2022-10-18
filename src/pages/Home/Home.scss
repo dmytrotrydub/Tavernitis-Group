@@ -1,0 +1,52 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.main-logo {
+  @include max-Screen {
+    background-color: $mainColor;
+    width: 100%;
+    height: 1vhh;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__restList {
+    @include max-Screen {
+      padding: 3rem 3rem;
+      margin: 0 1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  &__secRestList {
+    @include max-Screen {
+      padding: 3rem 3rem;
+      margin: 0 1.5rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  &__resto-card {
+    @include max-Screen {
+    }
+  }
+
+  &__resto {
+  }
+}
