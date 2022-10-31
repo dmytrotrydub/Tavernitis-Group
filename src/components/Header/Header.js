@@ -4,11 +4,10 @@ import { useState, useEffect } from 'react';
 import { useScrollDirection } from '../../Helper/ScrollDirectionHook';
 
 const Header = () => {
-
   const scrollDirection = useScrollDirection();
 
   return (
-    <header className={`header ${scrollDirection === 'down' ? "hide" : "show"} `}>
+    <header className={`header ${scrollDirection === 'down' ? 'show' : 'hide'} `}>
       <button type='button' id='nav-button'>
         <img src={nav} id='nav-image' alt='navigation' />
       </button>
@@ -16,8 +15,8 @@ const Header = () => {
         <a className='nav__option' href='#'>
           HOME
         </a>
-        <a className='nav__option' href='#'>
-          HISTORY OF THE BRAND
+        <a className='nav__option' href='#history-of-the-brand'>
+          HISTORY OF OUR BRAND
         </a>
         <a className='nav__option' href='#'>
           GALLERY
@@ -31,6 +30,6 @@ const Header = () => {
       </div>
     </header>
   );
-};;
+};
 
 export default Header;
