@@ -2,16 +2,25 @@
 @use '../../styles//partials/mixins' as *;
 
 .header {
+  background-color: $bodyColor;
   @include max-Screen {
     display: flex;
-    background-color: $bodyColor;
-    position: -webkit-sticky;
-    position:sticky;
-    top: 0;
-    width: 100%; 
+    align-items: center;
+    height: 6rem;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    justify-content: space-around;
     padding: 0.75rem;
-    box-sizing: border-box;
+    text-decoration: none;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
   }
+}
+.header.hide {
+  transition: all 1s ease-out;
+  display: none;
 }
 
 #nav-button {
@@ -30,4 +39,25 @@
     height: 100%;
     background-color: $bodyColor;
   }
+}
+
+.nav {
+  @include max-Screen {
+    width: 80%;
+    padding-right: 3.5rem;
+  }
+
+  &__option {
+    text-decoration: none;
+    color: $mainColor;
+    @include max-Screen {
+      font-size: 1.5rem;
+      width: 100%;
+      padding: 0 24px;
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }

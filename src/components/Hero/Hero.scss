@@ -1,0 +1,58 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+#main-logo {
+  height: 18.75rem;
+}
+
+.main-logo {
+  @include max-Screen {
+    background-color: $mainColor;
+    width: 100%;
+    min-height: 100vh;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__restList {
+    @include max-Screen {
+      width: 80%;
+      padding: 0rem 3rem;
+      margin: 0 1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &__secRestList {
+    @include max-Screen {
+      width: 88%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &__resto {
+    height: 9.375rem;
+    position: absolute;
+    z-index: 2;
+  }
+}

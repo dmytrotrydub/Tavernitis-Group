@@ -1,0 +1,48 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fonts' as *;
+
+.history {
+  background: url('https://res.cloudinary.com/hopkins87/image/upload/v1667179406/TAVERNITI-GROUP/sections-backgrounds/Screenshot_2022-09-22_at_10.24.43_PM_q5ire9.png')
+    no-repeat center;
+  background-attachment: fixed;
+  @include max-Screen {
+    height: 90vh;
+    padding: 24px;
+  }
+  &__heading {
+    color: $mainColor;
+    font-family: 'Allston Demo';
+
+    @include max-Screen {
+      font-size: 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__brand {
+    font-family: 'Paradise Thin Demo';
+    color: $tavernitisRed;
+  }
+
+  &__text {
+    position: relative;
+  }
+
+  &__opacity-layer-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: $mainColor;
+    opacity: 50%;
+  }
+  &__about {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: $mainColor;
+  }
+}

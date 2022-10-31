@@ -1,23 +1,30 @@
 @font-face {
-    font-family: 'Libre Baskerville';
-    src: url('../../../Assets/Fonts/transfonter.org-20221001-183258/LibreBaskerville-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Roboto Slab';
+  src: url('../../Assets/Fonts/transfonter.org-20221030-025417/RobotoSlab-Regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Libre Baskerville';
-    src: url('../../../Assets/Fonts/transfonter.org-20221001-183258/LibreBaskerville-Regular.woff2') format('woff2');
-    font-weight: normal;
+  font-family: 'Baguette';
+  src: url('../../Assets/Fonts/Baguete/Baguette.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Paradise Thin Demo';
+    src: url('../../Assets/Fonts/Paradise/ParadiseThinDemoRegular.woff2') format('woff2');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
-    font-family: 'Libre Baskerville';
-    src: url('../../../Assets/Fonts/transfonter.org-20221001-183258/') format('woff2');
-    font-weight: bold;
+    font-family: 'Allston Demo';
+    src: url('../../Assets/Fonts/Aliston/AllstonDemoRegular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
